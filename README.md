@@ -6,10 +6,14 @@ Vidclick
 ## Members: 
 Ihor Bobulych (ihbobu@ttu.ee, _Git User Name: Felix Yudashkin_), Artem Fedorchenko (artfed@ttu.ee), Oleksandr Portnov (olport@ttu.ee)
 
-## Responsibilities:
-- Ihor Bobulych : Main Page, Account Page, Log In/Sign Up Pages
-- Artem Fedorchenko : Main Idea of the Project, About Us Page
-- Oleksandr Portnov : Offers Page, Main Designer
+## Technologies:
+- HTML
+- CSS
+- GSAP
+- JS
+- PHP
+- SQL
+- Sessions
 
 ## ENOS URL:
 https://enos.itcollege.ee/~ihbobu/VidclickProj/
