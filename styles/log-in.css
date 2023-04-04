@@ -1,0 +1,55 @@
+.remember-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6.5rem;
+}
+.button-container{
+    margin-bottom: 2rem;
+}
+.button-container button:hover{
+    transform: scale(1.1);
+    transition: .1s;
+}
+.form-container{
+    gap: 2rem;
+}
+.form-container input,#form-button{
+    width: 80%;
+}
+.remember-me i{
+    font-size: 1.2rem;
+    padding-right: .5rem;
+    cursor: pointer;
+}
+.recover a{
+    color: #D93F21;
+}
+.recover a:hover{
+    text-decoration: underline;
+}
+.already-have{
+    gap: 76%;
+}
+#form-button{
+    background:none;
+    border: 1px solid #5a5a5a;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+#form-button:hover{
+    text-decoration: underline;
+}
+.account-have-content a:hover{
+    text-decoration: underline;
+}
+.msg__err{
+    padding-left: .5rem;
+    width: 70%;
+    height: 20px;
+    color: rgb(249, 57, 23);
+}
+
+.fa-circle-info{
+    margin-right: .5rem;
+}

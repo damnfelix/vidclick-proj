@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Farro&family=Montserrat&display=swap');
+@font-face {
+    font-family: "e-Ukraine";
+    src: url(../fonts/e-Ukraine-Bold.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Full settings*/
+
+body{
+    background-image: url(/image/bgwate.png);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.fa.fa-sign-in{
+    padding-left: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
+
+/*Navigation Bar*/
+
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    font-family: 'Farro', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+.nav-logo img{
+    width: 125px;
+    height: 25px;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.nav-container{
+    display: flex;
+}
+
+.sign-in-wrapper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.start-vidclick{
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    font-size: 0.8rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.start-vidclick a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover{
+    background-color: #585858;
+    transition: .5s;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-sign-up{
+    border: none;
+    background: #3F6AFF;
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Farro', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-sign-up:hover{
+    background-color: #585858;
+    transition: .5s;
+    border-bottom: 1px solid #3F6AFF;
+}
+
+.start-vidclick a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 768px){
+    nav, .nav-container {
+        flex-direction: column;
+    }
+    .nav-container{
+        align-items: center;
+        order: 2;
+    }
+    .nav-logo img{
+        margin-top: 1rem;
+        order: 1;
+    }
+    .sign-in-wrapper{
+        order: 3;
+        margin-bottom: 1rem;
+    }
+    .sign-in-wrapper button{
+        display: none;
+    }
+}
+
+/*Main Page Actions*/
+
+.main-container-wrapper{
+    /* position: relative; */
+    padding-top: 1rem;
+}
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.text-side{
+    color: black;
+    font-family: 'Dela Gothic One', cursive;
+    margin-bottom: 1rem;
+}
+
+.text-side h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.text-side h2{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+.fa.fa-arrow-right{
+    padding-left: 0.5rem;
+}
+
+
+
+.login-main-wrapper{
+    display: flex;
+    text-align: center;
+    align-items: start;
+    gap: 2rem;
+}
+
+.login-main-wrapper a{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 1.1rem;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.login-main-wrapper a:hover{
+    border-bottom: 2px solid black;
+}
+
+.login-main-wrapper button{
+    background-color: #9bb1fa;
+    color: #2324B2;
+    border: none;
+    margin-top: 0.8rem;
+    padding: 0.5rem 1.8rem;
+    border-radius: 2.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.login-main-wrapper button:hover{
+    color: white;
+    transition: .5s;
+}
+.bolt-wrapper{
+    padding-top: 1.5rem;
+    display: flex;
+    gap: 3rem;
+}
+.bolt{
+    text-align: center;
+}
+
+.bolt.first-bolt:hover{
+    color: #3F6AFF;
+    transition: .7s;
+}
+.bolt.second-bolt:hover{
+   color: #3F6AFF;
+   transition: .7s;
+}
+.bolt p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.15rem;
+}
+.fa-solid.fa-bolt{
+    padding-right: 1rem;
+}
+.vertical-bolt{
+    height: 100px;
+    border-left: 4px solid black;
+    border-radius: 2rem;
+}
+
+.soldier-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-self: flex-end;
+}
+.soldier-content img{
+    width: 650px;
+    height: 420px;
+}
+
+.line-content{
+    background-color: #3F6AFF;
+    margin-top: -0.3rem;
+    background-image: url(../image/background-pattern.png);
+    background-repeat: no-repeat;
+    padding-bottom: 2rem;
+}
+.hashtag-content{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.hashtag-content h1{
+    font-family: "e-Ukraine";
+    /* padding-top: 5rem;
+    padding-left: 10rem; */
+    font-size: 3rem;
+}
+.hashtag-content p{
+    font-family: "e-Ukraine";
+    /* text-align: center; */
+    color: lightgrey;
+    text-shadow: 1px 10px 2px black;
+}
+.fa-solid.fa-hashtag{
+    padding-right: 0.5rem;
+}
+
+/*Blue Container under Main*/
+
+.article-blue-container{
+   margin-left: 50%;
+}
+/* .blue-content-wrapper{
+    padding-right: 1rem;
+} */
+
+.blue-content-wrapper h1{
+
+    font-family: 'Dela Gothic One', cursive;
+    color: #03097c;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.blue-content-wrapper p{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+}
+
+.blue-content-wrapper button{
+    padding: 0.5rem 3rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    background-color: #9bb1fa;
+    color: #2324B2;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.blue-content-wrapper button:hover{
+    color: white;
+    transition: .5s;
+}
+
+.blue-content-wrapper i{
+    padding-left: 0.4rem;
+}
+
+.blue-content-wrapper img{
+    width: 300px;
+    display: block;
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 768px){
+    .main-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .hashtag-content h1{
+        font-size: 1rem;
+    }
+    .soldier-content{
+        justify-content: center;
+        align-items: center;
+        align-self: auto;
+    }
+    .soldier-image img{
+        width: 200px;
+        height: 120px;
+    }
+    .text-side h1{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .text-side h2{
+        font-size: 1rem;
+        text-align: center;
+    }
+    .emoji-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .emoji-container img{
+        width: 60px;
+        height: 60px;
+    }
+    .bolt-wrapper{
+        flex-direction: column;
+    }
+    .vertical-bolt{
+        display: none;
+    }
+    .login-main-wrapper{
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        gap: 1rem;
+    }
+    .line-content{
+        background-image: none;
+        text-align: center;
+    }
+    .blue-content-wrapper h1{
+        font-size: 1.3rem;
+    }
+    .blue-content-wrapper p{
+        font-size: 1rem;
+    }
+    .blue-content-wrapper img{
+        width: 200px;
+        margin: 0 auto;
+        
+    }
+    .article-blue-container{
+        margin: 0;
+    }
+}
+
+/*Footer*/
+
+.main-footer-container{
+    /* width: 100%; */
+    /* height: 50vh; */
+    background-color: black;
+    color: white;
+    padding: 2rem 3rem;
+}
+.main-footer-container img{
+    width: 125px;
+    height: 25px;
+}
+
+.menu-items--wrapper{
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-items-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.menu-title{
+    color: gray;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.menu-item ul li a{
+    text-decoration: none;
+    color: lightgray;
+}
+
+.menu-item ul{
+    list-style: none;
+}
+
+.menu-item ul li{
+    padding-bottom: 0.2rem;
+}
+
+.main-footer-container{
+    font-family: 'Montserrat', sans-serif;
+    color: lightgray;
+}
+
+.main-footer-container p{
+    padding-left: 0.4rem;
+}
+
+.social-icons-container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.icon-wrapper{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.main-footer-container a:hover{
+    text-decoration: underline;
+}
+
+.icon-wrapper i{
+    cursor: pointer;
+}
+.icon-wrapper i:hover{
+    transition: 100ms;
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px){
+    .menu-items--wrapper{
+       flex-direction: column;
+       gap: 2rem;
+       align-items: center;
+    }
+    .menu-items-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .icon-wrapper{
+        justify-content: center;
+    }
+
+}
+.text-side, .hashtag-content, .soldier-image{
+    will-change: transform;
+}

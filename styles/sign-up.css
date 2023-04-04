@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+main, input, button{
+    font-family: 'Poppins', sans-serif;
+}
+button{border: none;border-radius:.3rem;cursor: pointer;}
+.main-sign-container{
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign-wrapper{
+    width: 500px;
+    margin-bottom: 10rem;
+}
+.sign-wrapper h1, p{
+    text-align: center;
+}
+.sign-wrapper h1{
+    margin-bottom: .2rem;
+}
+#get-start{
+    margin-bottom: 1.7rem;
+    color: #7e7e7e;
+}
+#continue{
+    margin-bottom: 2rem;
+    position: relative;
+}
+#continue::before{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1.5px;
+    background: #DBDBDB;
+    left: 0;
+    top: 50%;
+    position: absolute;
+    margin-left: 1rem;
+}
+#continue::after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 1.5px;
+    background: #DBDBDB;
+    right: 0;
+    top: 50%;
+    position: absolute;
+    margin-right: 1rem;
+}
+.button-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: .5rem;
+}
+button{
+    padding: .4rem .6rem;
+    width: 7rem;
+}
+.icon-content{
+    display: flex;
+    gap: .3rem;
+}
+.icon-content.first{
+    padding-left: .6rem;
+}
+.icon-content p {
+    padding-top: 0.1rem;
+}
+.icon-content img{
+    width: 24px;
+    height: 24px;
+}
+
+.sign-wrapper input, .sign-wrapper button {
+    display: block;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.form-container input,#form-button, .form-select{
+    width: 70%;
+    height: 50px;
+    border: 1px solid #D9D9D9;
+    border-radius: .5rem;
+}
+#form-button{
+    background-color: #3F6AFF;
+    color: black;
+    font-weight: bold;
+}
+input{
+    padding: 12px 12px;
+}
+
+input:focus{
+    outline-color: #3F6AFF;
+}
+.already-have{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    gap: 80%;
+}
+#form-button:hover{
+    text-decoration: underline;
+    color: #D9D9D9;
+}
+.account-have-content a:hover{
+    text-decoration: underline;
+}
+.button-container button:hover{
+    transform: scale(1.1);
+    transition: .1s;
+}
+
+footer p{
+    text-align: left;
+}
+
+.msg__err{
+    padding-left: .5rem;
+    width: 70%;
+    height: 50px;
+    color: rgb(249, 57, 23);
+}
+
+.fa-circle-info{
+    margin-right: .5rem;
+}
+
+.hide{
+    display: none;
+}
+
+.tip p {
+    text-align: left;
+}
+.tip{
+    font-size: 12px;
+    height: 120px;
+    width: 70%;
+    padding-left: 1rem;
+}
+@media (max-width: 768px){
+    .already-have{
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-right: 0rem;
+    }
+    #continue::after{
+        display: none;
+    }
+    #continue::before{
+        display: none;
+    }
+    .sign-wrapper h1{
+        font-size: 1.3rem;
+    }
+}
+

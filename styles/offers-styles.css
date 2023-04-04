@@ -1,0 +1,134 @@
+
+body {
+	background-image: url(../image/cool-background.svg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+i{
+    padding-left: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+
+/*Heading Content*/
+
+.oheading {
+	padding-left: 15%;
+	color: #f9f9f9;
+	width: 100%;
+	display: flex;
+	gap: 5.2rem;
+	margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.oheading a{
+    color: white;
+    text-decoration: underline;
+}
+
+.content h1{
+	font-family: 'Dela Gothic One', cursive;
+}
+
+.content h3{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.content u {
+	cursor: pointer;
+}
+
+.content img {
+	width: 180px;
+	filter: brightness(100%) contrast(200%) hue-rotate(-15deg) saturate(1.2);
+	border: 1px solid white;
+}
+
+/*Card Proposals*/
+
+.ocontents {
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+    height: 100%;
+    margin-bottom: 3.5rem;
+}
+
+.ocontents div {
+    background-color: #f9f9f9;
+	border: 1px solid #f0f0f0;
+    padding: 1rem 1rem;
+	transition: 0.5s;
+	cursor: pointer;
+    width: 350px;
+    height: 400px;
+}
+
+.ocontents .card:hover {
+	background-color: #fbfbfb;
+	box-shadow: 5px 5px #000;
+	transition: 0.5s;
+}
+
+.ocontents div img {
+	width: 300px;
+    height: 200px;
+    border-radius: 5px;
+	object-fit: cover;
+	border: 2px solid black;
+	filter: hue-rotate(10deg) blur(0.4px) contrast(100%) saturate(1.2);
+}
+
+.ocontents div p {
+    text-align: left;
+	word-wrap: break-word;
+	white-space: normal;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.ocontents .passage {
+	padding: 10px;
+	border: 2px solid black;
+	width: 100%;
+	height: 150px;
+	max-height: 180px;
+    margin-top: 2%;
+}
+
+.ocontents .bar {
+	width: 100%;
+	height: 2px;
+	border-radius: 100px;
+	background-color: #3F6AFF;
+	margin-top: 6%;
+}
+
+.ocontents i {
+	color: black;
+	padding-right: 5px;
+}
+
+.region, .raiser, .target, .volume {
+	display: inline-block;
+}
+
+@media (max-width: 768px){
+    .ocontents{
+        flex-direction: column;
+    }
+    .oheading{
+       
+        flex-direction: column;
+        padding-left: 2rem;
+        gap: 2rem;
+    }
+    .ocontents {
+        margin: 1 auto;
+        padding-left: 2rem;
+    }
+}

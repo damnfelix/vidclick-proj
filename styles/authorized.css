@@ -1,0 +1,17 @@
+.start-vidclick-href, .btn-sign-up{
+    display: none;
+}
+.nav-logo{display: none;}
+
+nav{
+    justify-content: space-around;
+    gap: 10rem; 
+}
+@media (max-width: 768px) {
+    nav{
+        justify-content: center;
+        gap: 0;
+    }
+    .nav-container{margin-right: 0;}
+    .nav-logo{display: block;}
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Farro&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+main{
+    font-family: 'Poppins', sans-serif;
+}
+i{
+    margin-right: 0.5rem;
+}
+button{
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+body{
+    position: relative;
+}
+.heading{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 1rem;
+}
+.heading.proposal{
+    margin-bottom: 1rem;
+}
+#edit-btn{
+    margin-left: 0.5rem;
+    padding: 0.05rem 1.2rem;
+    align-self: center;
+    border: none;
+    background: #3F6AFF;
+    border-radius: 3rem;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#edit-btn:hover{
+    text-decoration: underline;
+}
+#hz-line{
+    width: 70%;
+    border-bottom: 2px solid black;
+    margin-left: 2rem;
+}
+#fundraiser-since{
+    text-transform: lowercase;
+    font-size: 0.8rem;
+    color: #b5b5b5;
+}
+.name-content{
+    padding: 2rem;
+}
+.name-content>*{
+    margin-bottom: 0.5rem;
+}
+.personal-info-container{
+    width: 520px;
+    height: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.personal-info-container>h2{
+    font-size: 1.4rem;
+}
+.img-name-wrapper img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.img-name-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+.personal-info-container{
+    padding: 2rem;
+}
+.img-name-wrapper h1{
+    font-size: 1.5rem;
+}
+.span-button{
+    display: flex;
+}
+.center-personal-info>*{
+    padding-left: 2rem;
+    margin-bottom: 0.5rem;
+}
+.info-proposals-divider{
+    display: flex;
+    margin: 2rem;
+    gap: 5rem
+}
+.current-proposals-container{
+    width: 100%;
+    height: 100%;
+}
+.image-with-title{
+    display: flex;
+    gap: 2rem;
+}
+.image-with-title img{
+    cursor: zoom-in;
+}
+.card-image{
+    width: 200px;
+    height: 150px;
+}
+.card-title{
+    font-size: 1.3rem;
+}
+.title-amount{
+    position: relative;
+    display: flex;
+    gap: 3rem;
+}
+.amount-end{
+    padding-top: 0.4rem;
+    position: absolute;
+    left: 75%;
+}
+.content-align-columm{
+    display: flex;
+    flex-direction: column;
+}
+.add-info{
+    display: flex;
+    gap: 10rem;
+}
+.views-placeholder{
+    align-self: flex-end;
+}
+.views-fav{
+    display: flex;
+    gap: 1rem;
+}
+.hz-line-proposals{
+    padding-top: 1rem;
+    border-bottom: 2px #d9d9d9 solid;
+    width: 100%;
+}
+.edit-btn-container{
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.change-btn{
+    background: transparent;
+    border: 2px solid;
+    border-color: #c5c5c5;
+    border-radius: .2rem;
+    padding: .4rem .6rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.change-btn:hover{
+    transform: scale(1.1);
+    transition: .1s;
+}
+.delete-btn{
+    background: transparent;
+    border: 2px solid;
+    border-color: tomato;
+    color: red;
+    border-radius: .2rem;
+    padding: .4rem .6rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.delete-btn:hover{
+    transform: scale(1.1);
+    transition: .1s;
+}
+.proposal-card-info{
+    padding: 4rem 1rem;
+    height: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.current-proposals-container>div{
+    margin-bottom: 2rem;
+}
+
+@media (max-width: 768px){
+    .info-proposals-divider{
+        flex-direction: column;
+    }
+    .personal-info-container{
+        width: 100%;
+        height: 100%;
+    }
+    .img-name-wrapper{
+        flex-direction: column;
+    }
+    .image-with-title{
+        flex-direction: column;
+    }
+    .current-proposals-container{
+        width: 100%;
+        height: 100%;
+    }
+    .proposal-card-info{
+        height: 100%;
+    }
+
+    .edit-btn-container{
+        padding-left: 0;
+    }
+    .card-title{
+        display: block;
+    }
+    .title-amount{
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .amount-end{
+        position: relative;
+        left: 0;
+        font-weight: bold;
+    }
+    .span-button{
+        flex-direction: column;
+    }
+    #edit-btn{
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        align-self: flex-start;
+    }
+    .add-info{
+        display: block;
+    }
+}

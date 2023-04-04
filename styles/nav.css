@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Farro&family=Montserrat&display=swap');
+@font-face {
+    font-family: "e-Ukraine";
+    src: url(../fonts/e-Ukraine-Bold.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.fa.fa-sign-in{
+    padding-left: 0.5rem;
+    color: white;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    font-family: 'Farro', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+.nav-logo img{
+    width: 125px;
+    height: 25px;
+}
+
+
+nav ul li{
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.nav-container{
+    display: flex;
+}
+
+.sign-in-wrapper{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.start-vidclick{
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    font-size: 0.8rem;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.start-vidclick a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover{
+    background-color: #585858;
+    transition: .5s;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-sign-up{
+    border: none;
+    background: #3F6AFF;
+    padding: 0.5rem 2rem;
+    border-radius: 3rem;
+    color: white;
+    font-weight: bold;
+    font-family: 'Farro', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-sign-up:hover{
+    background-color: #585858;
+    transition: .5s;
+    border-bottom: 1px solid #3F6AFF;
+}
+
+.start-vidclick a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 768px){
+    nav, .nav-container {
+        flex-direction: column;
+    }
+    .nav-container{
+        align-items: center;
+        order: 2;
+    }
+    .nav-logo img{
+        margin-top: 1rem;
+        order: 1;
+    }
+    .sign-in-wrapper{
+        order: 3;
+        margin-bottom: 1rem;
+    }
+    .sign-in-wrapper button{
+        display: none;
+    }
+}
