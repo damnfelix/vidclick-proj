@@ -14,6 +14,7 @@ Ihor Bobulych (ihbobu@ttu.ee, _Git User Name: Felix Yudashkin_), Artem Fedorchen
 - PHP
 - SQL
 - Sessions
+- FontAwesome
 
 ## ENOS URL:
 https://enos.itcollege.ee/~ihbobu/VidclickProj/
